@@ -1,20 +1,20 @@
 {
-  "name": "superinit",
+  "name": "superkit",
   "version": "0.1.0",
   "type": "module",
   "description": "A simple CLI to scaffold frontend and backend apps (Node, Python, Go).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HetSolanki/superinit.git"
+    "url": "https://github.com/HetSolanki/superkit.git"
   },
   "author": "Het Solanki",
   "bugs": {
-    "url": "https://github.com/HetSolanki/superinit/issues"
+    "url": "https://github.com/HetSolanki/superkit/issues"
   },
-  "homepage": "https://github.com/HetSolanki/superinit#readme",
+  "homepage": "https://github.com/HetSolanki/superkit#readme",
   "main": "dist/index.js",
   "bin": {
-    "superinit": "bin/superinit.js"
+    "superkit": "bin/superkit.js"
   },
   "files": [
     "dist",
@@ -32,11 +32,36 @@
     "scaffold",
     "project-generator",
     "boilerplate",
+    "starter",
+    "initializer",
+    "app-generator",
+    "code-generator",
+    "devtool",
+    "developer-tool",
+    "fullstack",
+    "frontend",
+    "backend",
     "nodejs",
-    "typescript",
-    "nextjs",
     "express",
-    "devtool"
+    "fastify",
+    "python",
+    "fastapi",
+    "go",
+    "gin",
+    "nextjs",
+    "vite",
+    "react",
+    "vue",
+    "svelte",
+    "typescript",
+    "javascript",
+    "api",
+    "server",
+    "webapp",
+    "setup-tool",
+    "automation",
+    "build-tool",
+    "open-source"
   ],
   "license": "MIT",
   "dependencies": {
