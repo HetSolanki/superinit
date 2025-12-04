@@ -1,9 +1,17 @@
 {
   "name": "superinit",
-  "author": "Het Solanki",
   "version": "0.1.0",
-  "description": "",
   "type": "module",
+  "description": "A simple CLI to scaffold frontend and backend apps (Node, Python, Go).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HetSolanki/superinit.git"
+  },
+  "author": "Your Name",
+  "bugs": {
+    "url": "https://github.com/HetSolanki/superinit/issues"
+  },
+  "homepage": "https://github.com/HetSolanki/superinit#readme",
   "main": "dist/index.js",
   "bin": {
     "superinit": "bin/superinit.js"
