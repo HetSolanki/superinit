@@ -1,0 +1,42 @@
+{
+  "name": "superinit",
+  "author": "Het Solanki",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "superinit": "bin/superinit.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "project-generator",
+    "boilerplate",
+    "nodejs",
+    "typescript",
+    "nextjs",
+    "express",
+    "devtool"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^9.6.1",
+    "fs-extra": "^11.3.2",
+    "kleur": "^4.1.5",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/execa": "^2.0.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.10.1",
+    "@types/prompts": "^2.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "undici-types": "^7.16.0"
+  }
+}
