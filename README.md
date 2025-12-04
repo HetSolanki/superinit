@@ -1,12 +1,12 @@
-# superinit
+# supersetup
 
 **One command. Every framework. Zero config hassle.**
 
 A simple CLI to scaffold frontend and backend projects instantly.
 
-## What is superinit?
+## What is supersetup?
 
-superinit helps you create new projects without the hassle of manual setup. Just run one command and get a fully structured app ready to go.
+supersetup helps you create new projects without the hassle of manual setup. Just run one command and get a fully structured app ready to go.
 
 **Supports:**
 
@@ -16,10 +16,10 @@ superinit helps you create new projects without the hassle of manual setup. Just
 ## How to use
 
 ```bash
-npx superinit
+npx supersetup
 ```
 
-That's it! Follow the prompts to choose your stack, and superinit will generate your project.
+That's it! Follow the prompts to choose your stack, and supersetup will generate your project.
 
 ## License
 

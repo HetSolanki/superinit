@@ -29,11 +29,11 @@ if (args.includes("--help") || args.includes("-h")) {
 
 function printHelp() {
   console.log();
-  console.log(bold(cyan("superinit — App Scaffolding CLI")));
+  console.log(bold(cyan("supersetup — App Scaffolding CLI")));
   console.log();
   console.log("Usage:");
-  console.log(`  ${yellow("superinit")}        Start interactive setup`);
-  console.log(`  ${yellow("superinit --help")} Show this help`);
+  console.log(`  ${yellow("supersetup")}        Start interactive setup`);
+  console.log(`  ${yellow("supersetup --help")} Show this help`);
   console.log();
   console.log(bold("What you can create:"));
   console.log(`  ${yellow("Frontend apps")}`);

@@ -1,20 +1,20 @@
 {
-  "name": "superkit",
+  "name": "supersetup",
   "version": "0.1.0",
   "type": "module",
   "description": "A simple CLI to scaffold frontend and backend apps (Node, Python, Go).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HetSolanki/superkit.git"
+    "url": "https://github.com/HetSolanki/supersetup.git"
   },
   "author": "Het Solanki",
   "bugs": {
-    "url": "https://github.com/HetSolanki/superkit/issues"
+    "url": "https://github.com/HetSolanki/supersetup/issues"
   },
-  "homepage": "https://github.com/HetSolanki/superkit#readme",
+  "homepage": "https://github.com/HetSolanki/supersetup#readme",
   "main": "dist/index.js",
   "bin": {
-    "superkit": "bin/superkit.js"
+    "supersetup": "bin/supersetup.js"
   },
   "files": [
     "dist",

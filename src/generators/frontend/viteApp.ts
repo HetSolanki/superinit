@@ -42,7 +42,7 @@ async function ensureEsm(projectDir: string) {
 }
 
 async function ensureReadme(projectDir: string) {
-  const readmePath = path.join(projectDir, "README.superinit.md");
+  const readmePath = path.join(projectDir, "README.supersetup.md");
   const content = `
 This project was bootstrapped with:
 
