@@ -16,6 +16,13 @@
   "bin": {
     "superinit": "bin/superinit.js"
   },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "ts-node src/index.ts"
