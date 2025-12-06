@@ -2,6 +2,7 @@ import path from "node:path";
 import fs from "fs-extra";
 import { run } from "../../utils/run.js";
 import type { FrontendAnswers, FrontendTemplate } from "../types.js";
+import supersetupDefaultPage from "../../utils/defaultPages/viteReact.js";
 
 export async function generateViteApp(answers: FrontendAnswers) {
   const { projectName, frontend, useTypescript } = answers;
@@ -17,8 +18,18 @@ export async function generateViteApp(answers: FrontendAnswers) {
     "--template",
     template,
   ]);
-
   const projectDir = path.resolve(process.cwd(), projectName);
+
+  // Configure Tailwind CSS
+  await run(
+    "npm",
+    ["install", "tailwindcss", "@tailwindcss/vite"],
+    projectName
+  );
+  await configViteForTailwind(projectDir, useTypescript);
+
+  await updateHomePage(projectDir, useTypescript);
+  await run("npm", ["install", "lucide-react"], projectDir);
   await ensureEsm(projectDir);
   await ensureReadme(projectDir);
 }
@@ -56,4 +67,37 @@ Quickstart:
 `.trimStart();
 
   await fs.writeFile(readmePath, content);
+}
+
+async function updateHomePage(projectDir: string, useTypescript: boolean) {
+  const pagePath = path.join(
+    projectDir,
+    "src",
+    useTypescript ? "App.tsx" : "App.jsx"
+  );
+
+  await fs.writeFile(pagePath, supersetupDefaultPage);
+}
+
+async function configViteForTailwind(projectDir: string, ts: boolean) {
+  const viteConfigPath = path.join(
+    projectDir,
+    ts ? "vite.config.ts" : "vite.config.js"
+  );
+
+  let viteConfig = `
+  import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [
+    tailwindcss(), react()
+  ],
+})`;
+  await fs.writeFile(viteConfigPath, viteConfig);
+
+  const indexCssPath = path.join(projectDir, "src", "index.css");
+  const indexCss = `@import "tailwindcss";`;
+  await fs.writeFile(indexCssPath, indexCss);
 }
