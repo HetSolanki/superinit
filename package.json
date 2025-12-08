@@ -1,6 +1,6 @@
 {
   "name": "supersetup",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "description": "A simple CLI to scaffold frontend and backend apps (Node, Python, Go).",
   "repository": {
